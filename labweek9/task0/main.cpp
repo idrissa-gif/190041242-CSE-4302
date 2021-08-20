@@ -1,6 +1,6 @@
 
 #include "msoftcon.h" //for console graphics
-#include <iostream>                 //for I/O
+#include <iostream>                 
 #include <cstdlib>                  //for random()
 #include <ctime>                    //for time()
 using namespace std;
@@ -12,11 +12,11 @@ class horse
 {
 private:
     const track* ptrTrack;        //pointer to track
-    const int horse_number;       //this horse’s number
-    float finish_time;            //this horse’s finish time
+    const int horse_number;       //this horseâ€™s number
+    float finish_time;            //this horseâ€™s finish time
     float distance_run;           //distance run so far
 public:                          //create the horse
-    horse(const int n, const track* ptrT) : horse_number(n), ptrTrack(ptrT), distance_run(0.0)    //haven’t moved yet
+    horse(const int n, const track* ptrT) : horse_number(n), ptrTrack(ptrT), distance_run(0.0)    //havenâ€™t moved yet
     {  }
     ~horse()                      //destroy the horse
     { /*empty*/ }
